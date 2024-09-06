@@ -9,16 +9,19 @@ namespace SistemaContratos.Controllers
             return View();
         }
 
+        // Adição de contrato
         public IActionResult Adicionar()
         {
             return View();
         }
 
+        // Edição de contrato
         public IActionResult Editar()
         {
             return View();
         }
 
+        // Confirmação de remoção do contrato
         public IActionResult Remover()
         {
             return View();
