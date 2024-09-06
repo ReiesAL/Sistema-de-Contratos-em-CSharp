@@ -20,3 +20,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/*Classe na cor vermelha de aviso, usada em campos obrigatórios*/
+.ft-danger {
+    color: #e90101;
+}

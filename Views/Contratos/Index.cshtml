@@ -1,69 +1,66 @@
 ﻿@{
     ViewData["Title"] = "Contratos - Listagem";
 }
-<div class="text-center">
+<!--Div de ordenação principal-->
+<div class="col-sm-12 mt-4">
 
-    <!--Listagem dos contratos-->
+    <!--Título-->
     <div class="justify-content-center">
         <h1 class="display-4 text-center">Listagem dos contratos</h1>
     </div>
 
-    <!--Div de ordenação principal-->
-    <div class="col-sm-12 mt-4">
+    <!--Botões para adição de contratos-->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+        <a asp-controller="Contratos" asp-action="Adicionar" role="button" class="btn btn-success">Adicionar Contrato</a>
+    </div>
 
-        <!--Botões para adição de contratos-->
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-            <a asp-controller="Contratos" asp-action="Adicionar" role="button" class="btn btn-success">Adicionar Contrato</a>
-        </div>
-
-        <!--Tabela dos contratos-->
-        <div name="tabela-contratos" class="col-sm-12 mt-2">
-            <table class="table table-striped table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">CPF</th>
-                        <th scope="col">Contrato</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Produto</th>
-                        <th scope="col">Valor</th>
-                        <th scope="col">Vencimento</th>
-                        <th scope="col">Data de inclusão</th>
-                        <th scope="col">Responsável por incluir</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="col">12345678900</td>
-                        <td scope="col">1234</td>
-                        <td scope="col">Antônio Donizeti</td>
-                        <td scope="col">Calça</td>
-                        <td scope="col">1668.00</td>
-                        <td scope="col">05/08/2027</td>
-                        <td scope="col">06/09/2024</td>
-                        <td scope="col">Vinícius Reies</td>
-                        <td scope="col" class="btn-group" role="group">
-                            <a role="button" class="btn btn-danger">Editar</a>
-                            <a role="button" class="btn btn-secondary">Remover</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="col">98765432100</td>
-                        <td scope="col">5678</td>
-                        <td scope="col">Rosânia Manfrim</td>
-                        <td scope="col">Tênis</td>
-                        <td scope="col">53.00</td>
-                        <td scope="col">20/03/2026</td>
-                        <td scope="col">06/09/2024</td>
-                        <td scope="col">Vinícius Reies</td>
-                        <td scope="col" class="btn-group" role="group">
-                            <a role="button" class="btn btn-danger">Editar</a>
-                            <a role="button" class="btn btn-secondary">Remover</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <!--Tabela dos contratos-->
+    <div name="tabela-contratos" class="text-center col-sm-12 mt-2">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">CPF</th>
+                    <th scope="col">Contrato</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Vencimento</th>
+                    <th scope="col">Data de inclusão</th>
+                    <th scope="col">Responsável por incluir</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="col">12345678900</td>
+                    <td scope="col">1234</td>
+                    <td scope="col">Antônio Donizeti</td>
+                    <td scope="col">Calça</td>
+                    <td scope="col">1668.00</td>
+                    <td scope="col">05/08/2027</td>
+                    <td scope="col">06/09/2024</td>
+                    <td scope="col">Vinícius Reies</td>
+                    <td scope="col" class="btn-group" role="group">
+                        <a role="button" class="btn btn-danger">Editar</a>
+                        <a role="button" class="btn btn-secondary">Remover</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="col">98765432100</td>
+                    <td scope="col">5678</td>
+                    <td scope="col">Rosânia Manfrim</td>
+                    <td scope="col">Tênis</td>
+                    <td scope="col">53.00</td>
+                    <td scope="col">20/03/2026</td>
+                    <td scope="col">06/09/2024</td>
+                    <td scope="col">Vinícius Reies</td>
+                    <td scope="col" class="btn-group" role="group">
+                        <a role="button" class="btn btn-danger">Editar</a>
+                        <a role="button" class="btn btn-secondary">Remover</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 </div>

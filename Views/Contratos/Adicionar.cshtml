@@ -1,18 +1,45 @@
 ﻿@{
     ViewData["Title"] = "Contratos - Adicionar";
 }
+<!--Div de ordenação principal-->
+<div class="col-sm-12 mt-4">
 
-<div class="text-center">
-
-    <!--Listagem dos contratos-->
+    <!--Título-->
     <div class="justify-content-center">
         <h1 class="display-4 text-center">Adição de Contratos</h1>
     </div>
 
-    <!--Div de ordenação principal-->
-    <div class="col-sm-12 mt-4">
+    <!--Cadastro de contrato-->
+    <form>
+        <div class="form-group row">
+            <div class="col-sm-4 mb-3">
+                <label for="contrato" class="form-label">Contrato</label><span class="ft-danger" title="Campo obrigatório"> *</span>
+                <input type="text" class="form-control" id="contrato" placeholder="Insira o número do contrato">
+            </div>
+            <div class="col-sm-8 mb-3">
+                <label for="nome" class="form-label">Nome</label><span class="ft-danger" title="Campo obrigatório"> *</span>
+                <input type="text" class="form-control" id="nome" placeholder="Insira o nome">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-4 mb-3">
+                <label for="produto" class="form-label">Produto</label><span class="ft-danger" title="Campo obrigatório"> *</span>
+                <input type="text" class="form-control" id="produto" placeholder="Insira qual o produto">
+            </div>
+            <div class="col-sm-4 mb-3">
+                <label for="valor" class="form-label">Valor</label><span class="ft-danger" title="Campo obrigatório"> *</span>
+                <input type="text" class="form-control" id="valor" placeholder="Insira o valor">
+            </div>
+            <div class="col-sm-4 mb-3">
+                <label for="vencimento" class="form-label">Vencimento</label><span class="ft-danger" title="Campo obrigatório"> *</span>
+                <input type="text" class="form-control" id="vencimento" placeholder="Data de vencimento">
+            </div>
+        </div>
 
-        
-    </div>
+        <!--Botão de cadastrar-->
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+        </div>
+    </form>
 
 </div>
