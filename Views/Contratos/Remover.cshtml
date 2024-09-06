@@ -1,3 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Contratos - Remover";
 }
+
+<!--Div de ordenação principal-->
+<div class="col-sm-12 mt-4">
+
+    <h3>Realmente deseja remover o contrato de número XXXXX com nome de BLABLABLA?</h3>
+
+    <!--Botão de interação-->
+    <div class="d-flex justify-content-between">
+        <a class="btn btn-secondary" asp-controller="Contratos" asp-action="Index" role="button">Cancelar</a>
+        <a class="btn btn-primary" role="button" asp-controller="Contratos" asp-action="RemoverContrato">Confirmar</a>
+    </div>
+
+</div>
