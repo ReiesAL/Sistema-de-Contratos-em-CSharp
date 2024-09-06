@@ -1,16 +1,18 @@
 ﻿@{
-    ViewData["Title"] = "Contratos";
+    ViewData["Title"] = "Contratos - Listagem";
 }
+<div class="text-center">
 
-<!--Listagem dos contratos-->
-<div class="justify-content-center">
-    <h1 class="display-4 text-center">Listagem dos contratos</h1>
-</div>
+    <!--Listagem dos contratos-->
+    <div class="justify-content-center">
+        <h1 class="display-4 text-center">Listagem dos contratos</h1>
+    </div>
 
-<div class="mt-4">
-    <div class="col-sm-12">
+    <!--Div de ordenação principal-->
+    <div class="col-sm-12 mt-4">
 
-        <div class="mt-4">
+        <!--Botões para adição de contratos-->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
             <a role="button" class="btn btn-success">Adicionar Carga</a>
             <a role="button" class="btn btn-success">Adicionar Contrato</a>
         </div>
@@ -41,21 +43,21 @@
                         <td scope="col">05/08/2027</td>
                         <td scope="col">06/09/2024</td>
                         <td scope="col">Vinícius Reies</td>
-                        <td class="btn-group" role="group">
+                        <td scope="col" class="btn-group" role="group">
                             <a role="button" class="btn btn-danger">Editar</a>
                             <a role="button" class="btn btn-secondary">Remover</a>
                         </td>
                     </tr>
                     <tr>
-                        <td scope="col">98765432100</th>
-                        <td scope="col">5678</th>
-                        <td scope="col">Rosânia Manfrim</th>
-                        <td scope="col">Tênis</th>
-                        <td scope="col">53.00</th>
-                        <td scope="col">20/03/2026</th>
-                        <td scope="col">06/09/2024</th>
-                        <td scope="col">Vinícius Reies</th>
-                        <td class="btn-group" role="group">
+                        <td scope="col">98765432100</td>
+                        <td scope="col">5678</td>
+                        <td scope="col">Rosânia Manfrim</td>
+                        <td scope="col">Tênis</td>
+                        <td scope="col">53.00</td>
+                        <td scope="col">20/03/2026</td>
+                        <td scope="col">06/09/2024</td>
+                        <td scope="col">Vinícius Reies</td>
+                        <td scope="col" class="btn-group" role="group">
                             <a role="button" class="btn btn-danger">Editar</a>
                             <a role="button" class="btn btn-secondary">Remover</a>
                         </td>
@@ -64,4 +66,5 @@
             </table>
         </div>
     </div>
+
 </div>

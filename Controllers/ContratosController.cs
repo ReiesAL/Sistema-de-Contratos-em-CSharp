@@ -8,5 +8,20 @@ namespace SistemaContratos.Controllers
         {
             return View();
         }
+
+        public IActionResult Adicionar()
+        {
+            return View();
+        }
+
+        public IActionResult Editar()
+        {
+            return View();
+        }
+
+        public IActionResult Remover()
+        {
+            return View();
+        }
     }
 }
