@@ -11,8 +11,8 @@ using SistemaContratos.Data;
 namespace SistemaContratos.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20240907003027_LoadTabelaContratos")]
-    partial class LoadTabelaContratos
+    [Migration("20240907010902_LoadTabelas")]
+    partial class LoadTabelas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
