@@ -8,16 +8,5 @@
         public string Email { get; set; }
         public string Data_criacao { get; set; }
         public string Data_exclusao { get; set; }
-
-        // Construtor de usuarios
-        public UsuariosModel(int id, int cpf, string nome, string email, string dataCriacao, string dataExclusao)
-        {
-            Id = id;
-            Cpf = cpf;
-            Nome = nome;
-            Email = email;
-            Data_criacao = dataCriacao;
-            Data_exclusao = dataExclusao;
-        }
     }
 }
