@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using SistemaContratos.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// injeções de dependência 
+builder.Services.AddDbContext<BancoContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
 
 var app = builder.Build();
 
